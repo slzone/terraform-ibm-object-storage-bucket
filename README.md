@@ -18,6 +18,7 @@ The module depends on the following software components:
 ## Module dependencies
 
 - Resource group - github.com/cloud-native-toolkit/terraform-ibm-resource-group.git
+- Object storage - github.com/ibm-garage-cloud/terraform-ibm-object-storage.git
 
 ## Example usage
 

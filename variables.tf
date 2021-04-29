@@ -10,10 +10,8 @@ variable "provision" {
 }
 
 
-## cos instance vars
-
-variable "name" {
-    description = "Name of the COS instance"
+variable "cos_instance_id" {
+    description = "id of the COS instance"
     type        = string
     default     = ""
 }
@@ -24,30 +22,14 @@ variable "name_prefix" {
   default     = ""
 }
 
-variable "plan" {
-    description = "Plan for the Cloud Object Storage instance"
-    type        = string
-    default     = "standard"
-}
-
-
-variable "location" {
-    description = "COS Location location. Default 'global'"
-    type        = string
-    default     = "global"
-}
-
-
-## bucket vars
-
-variable "bucket_name" {
+variable "name" {
     description = "Name of the bucket"
     type        = string
     default     = ""
 }
 
 
-variable "bucket_region" {
+variable "region" {
     description = "Cross-regional bucket location. Supported values are us, eu, and ap.  Default 'us'"
     type        = string
     default     = "us"
@@ -60,7 +42,6 @@ variable "storage_class" {
 }
 
 
-## other variables
 variable "ibmcloud_api_key" {
   type        = string
   description = "The IBM Cloud api token"
