@@ -10,7 +10,7 @@ data "ibm_resource_group" "resource_group" {
   name = var.resource_group_name
 }
 
-# COS instance decalared
+# COS instance 
 data "ibm_resource_instance" "cos_instance" {
     resource_group_id = data.ibm_resource_group.resource_group.id
     name              = "slz-rg-cos"
@@ -19,7 +19,7 @@ data "ibm_resource_instance" "cos_instance" {
     location          = var.resource_location
 }
 
-# HPCS instance deaclared
+# HPCS instance 
 data "ibm_resource_instance" "hpcs_instance" {
     resource_group_id = data.ibm_resource_group.resource_group.id
     name              = var.hpcs_instance_name
