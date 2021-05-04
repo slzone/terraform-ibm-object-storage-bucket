@@ -4,6 +4,7 @@ variable "resource_group_name" {
   default     = "slz-rg"
 }
 
+#cos instance variables
 variable "cos_instance_name" {
    description = "The name of COS Instance"
    type        = string
@@ -22,6 +23,7 @@ variable "resource_location" {
    default     = "global"
 }
 
+#hpcs instance variables
 variable "hpcs_instance_name" {
    description = "The name of HPCS Instance"
    type        = string
@@ -65,10 +67,11 @@ variable "name" {
     default     = "cloud-s-12"
 }
 
-variable "region" {
-    description = "Cross-regional bucket location. Supported values are us, eu, and ap.  Default 'us'"
+
+variable "region_location" {
+    description = "location of the bucket"
     type        = string
-    default     = "us"
+    default     = "us-south"
 }
 
 variable "storage_class" {
