@@ -44,6 +44,6 @@ resource "ibm_cos_bucket" "bucket_instance" {
   storage_class           = var.storage_class
   key_protect             = data.ibm_kms_key.kmskey.keys[0].crn
 }
-}
+
 
 
